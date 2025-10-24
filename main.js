@@ -7,12 +7,24 @@ document.querySelector(".control-btn span").onclick = function () {
   }
   document.querySelector(".control-btn").remove();
   document.getElementById("backgruod").play();
+  one();
 };
 
 let time = 1000;
 let blockCont = document.querySelector(".blocks");
 let blocks = Array.from(blockCont.children);
 let range = [...Array(blocks.length).keys()];
+
+function one() {
+  blocks.forEach((ch) => {
+    ch.classList.add("fileb");
+  });
+  setTimeout(() => {
+    blocks.forEach((ch) => {
+      ch.classList.remove("fileb");
+    });
+  }, 1500);
+}
 
 swip(range);
 
@@ -75,3 +87,4 @@ blocks.forEach((block, index) => {
     flib(block);
   });
 });
+
