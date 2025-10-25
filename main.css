@@ -80,6 +80,7 @@ video {
     text-align: center;
     backface-visibility: hidden;
     border: 5px solid #ffc107;
+    border-radius: 10px;
 }
 
 .blocks .game-block .front {
@@ -114,7 +115,6 @@ video {
 @media(max-width:767px) {
     .cont {
         max-width: 100%;
-        /* margin: 10px; */
     }
 
     .control-btn span {
@@ -149,9 +149,9 @@ video {
     }
 
     .blocks .game-block .back img {
-        width: 50%;
-        height: 80%;
-        margin-top: 10px;
+        width: 100%;
+        height: 100%;
     }
 
 }
+
