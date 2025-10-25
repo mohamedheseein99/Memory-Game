@@ -95,14 +95,13 @@ video {
 }
 
 .blocks .game-block .back {
-    background-color: #eeeeeef2;
+    background-color: goldenrod;
     transform: rotateY(180deg);
 }
 
 .blocks .game-block .back img {
-    width: 30%;
-    height: 80%;
-    margin-top: 15px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -154,4 +153,5 @@ video {
         height: 80%;
         margin-top: 10px;
     }
+
 }
