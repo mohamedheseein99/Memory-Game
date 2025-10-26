@@ -33,7 +33,7 @@ function one() {
     blocks.forEach((ch) => {
       ch.classList.remove("fileb");
     });
-  }, 1500);
+  }, 3000);
 }
 
 swip(range);
@@ -106,7 +106,8 @@ function win() {
   });
   if (i === 19) {
     alert(`مبروك لقد أنهيت اللعبة، صل علي الحبيب محمد`);
-  } else if (i === 0) {
+  } else {
     alert(`مبروك لقد خسرت اللعبة بس مش مهم المهم صحتك يا غالي، صل علي النبي`);
   }
 }
+
