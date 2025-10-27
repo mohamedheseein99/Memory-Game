@@ -1,22 +1,22 @@
 document.querySelector(".control-btn span").onclick = function () {
-  let name = prompt("من فضلك أدخل الإسم :");
-  if (name === "") {
-    document.querySelector(".name span").innerHTML = "غير معروف";
-  } else {
-    document.querySelector(".name span").innerHTML = name;
-  }
+  // let name = prompt("من فضلك أدخل الإسم :");
+  // if (name === "") {
+  //   document.querySelector(".name span").innerHTML = "غير معروف";
+  // } else {
+  //   document.querySelector(".name span").innerHTML = name;
+  // }
   document.querySelector(".control-btn").style.display = "none";
   document.getElementById("backgruod").play();
   one();
   let e = setInterval(timer, 1000);
-  function timer() {
-    T.innerHTML -= 1;
-    if (T.innerHTML === "0") {
-      clearInterval(e);
-      win();
-      window.location.reload();
-    }
-  }
+  // function timer() {
+  //   T.innerHTML -= 1;
+  //   if (T.innerHTML === "0") {
+  //     clearInterval(e);
+  //     win();
+  //     window.location.reload();
+  //   }
+  // }
 };
 
 let time = 1000;
@@ -80,6 +80,9 @@ function check(one, two) {
     document.getElementById("secsess").play();
   } else {
     tray.innerHTML = parseInt(tray.innerHTML) + 1;
+    if (tray.innerHTML == 6) {
+      alert("خلاص يا باشا خسرت 5 غلطات اهو وواحده من عندي كمان عشان متزعلش");
+    }
     setTimeout(() => {
       one.classList.remove("fileb");
       two.classList.remove("fileb");
@@ -95,20 +98,21 @@ blocks.forEach((block, index) => {
   });
 });
 
-function win() {
-  let i = 0;
-  blocks.filter((d) => {
-    if (d.classList.contains("matsh")) {
-      i++;
-    } else {
-      i = 0;
-    }
-  });
-  if (i === 19) {
-    alert(`مبروك لقد أنهيت اللعبة، صل علي الحبيب محمد`);
-  } else {
-    alert(`مبروك لقد خسرت اللعبة بس مش مهم المهم صحتك يا غالي، صل علي النبي`);
-  }
-}
+// function win() {
+//   let i = 0;
+//   blocks.filter((d) => {
+//     if (d.classList.contains("matsh")) {
+//       i++;
+//     } else {
+//       i = 0;
+//     }
+//   });
+//   if (i === 19) {
+//     alert(`مبروك لقد أنهيت اللعبة، صل علي الحبيب محمد`);
+//   } else {
+//     alert(`مبروك لقد خسرت اللعبة بس مش مهم المهم صحتك يا غالي، صل علي النبي`);
+//   }
+// }
+
 
 
