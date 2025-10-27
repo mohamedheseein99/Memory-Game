@@ -70,6 +70,10 @@ function stop() {
   }, time);
 }
 
+function stoooop() {
+      blockCont.classList.add("stop");
+}
+
 function check(one, two) {
   let tray = document.querySelector(".try span");
   if (one.dataset.img === two.dataset.img) {
@@ -90,9 +94,6 @@ function check(one, two) {
     }, time);
     document.getElementById("fail").play();
   }
-}
-function stoooop() {
-      blockCont.classList.add("stop");
 }
 blocks.forEach((block, index) => {
   block.style.order = range[index];
@@ -116,6 +117,7 @@ blocks.forEach((block, index) => {
 //     alert(`مبروك لقد خسرت اللعبة بس مش مهم المهم صحتك يا غالي، صل علي النبي`);
 //   }
 // }
+
 
 
 
