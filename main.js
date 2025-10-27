@@ -82,6 +82,7 @@ function check(one, two) {
     tray.innerHTML = parseInt(tray.innerHTML) + 1;
     if (tray.innerHTML == 6) {
       alert("خلاص يا باشا خسرت 5 غلطات اهو وواحده من عندي كمان عشان متزعلش");
+          blockCont.classList.add("stop");
     }
     setTimeout(() => {
       one.classList.remove("fileb");
@@ -113,6 +114,7 @@ blocks.forEach((block, index) => {
 //     alert(`مبروك لقد خسرت اللعبة بس مش مهم المهم صحتك يا غالي، صل علي النبي`);
 //   }
 // }
+
 
 
 
