@@ -69,11 +69,6 @@ function stop() {
     blockCont.classList.remove("stop");
   }, time);
 }
-
-function stoooop() {
-      blockCont.classList.add("stop");
-}
-
 function check(one, two) {
   let tray = document.querySelector(".try span");
   if (one.dataset.img === two.dataset.img) {
@@ -86,7 +81,9 @@ function check(one, two) {
     tray.innerHTML = parseInt(tray.innerHTML) + 1;
     if (tray.innerHTML == 6) {
       alert("خلاص يا باشا خسرت 5 غلطات اهو وواحده من عندي كمان عشان متزعلش");
-      stoooop();    
+      blocks.forEach((bl) => {
+        bl.classList.add("matsh");
+      });
     }
     setTimeout(() => {
       one.classList.remove("fileb");
@@ -117,6 +114,7 @@ blocks.forEach((block, index) => {
 //     alert(`مبروك لقد خسرت اللعبة بس مش مهم المهم صحتك يا غالي، صل علي النبي`);
 //   }
 // }
+
 
 
 
