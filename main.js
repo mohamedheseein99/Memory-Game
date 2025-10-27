@@ -82,7 +82,7 @@ function check(one, two) {
     tray.innerHTML = parseInt(tray.innerHTML) + 1;
     if (tray.innerHTML == 6) {
       alert("خلاص يا باشا خسرت 5 غلطات اهو وواحده من عندي كمان عشان متزعلش");
-          blockCont.classList.add("stop");
+      stoooop();    
     }
     setTimeout(() => {
       one.classList.remove("fileb");
@@ -91,7 +91,9 @@ function check(one, two) {
     document.getElementById("fail").play();
   }
 }
-
+function stoooop() {
+      blockCont.classList.add("stop");
+}
 blocks.forEach((block, index) => {
   block.style.order = range[index];
   block.addEventListener("click", function () {
@@ -114,6 +116,7 @@ blocks.forEach((block, index) => {
 //     alert(`مبروك لقد خسرت اللعبة بس مش مهم المهم صحتك يا غالي، صل علي النبي`);
 //   }
 // }
+
 
 
 
