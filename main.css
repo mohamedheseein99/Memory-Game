@@ -134,7 +134,7 @@ video {
         direction: rtl;
         width: 100%;
         grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-        gap: 5;
+        gap: 5px;
     }
 
     .blocks .game-block {
@@ -154,4 +154,5 @@ video {
         height: 100%;
     }
 }
+
 
